@@ -30,7 +30,7 @@ public class SfgDiApplication {
 			2) Precisa de Autowired senao dá null pointer no Service	*/
 
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
-		propertyInjectedController.getGreeting();
+		System.out.println(propertyInjectedController.getGreeting());
 
 
 		System.out.println("SetterInjectedController Test ----------------------");
@@ -40,7 +40,7 @@ public class SfgDiApplication {
 			2) Precisa de Autowired senao dá null pointer no Service	*/
 
 		SetterInjectedController setterInjectedController = (SetterInjectedController) ctx.getBean("setterInjectedController");
-		setterInjectedController.getGreeting();
+		System.out.println(setterInjectedController.getGreeting());
 
 
 		System.out.println("ConstructorInjectedController Test ----------------------");
@@ -50,7 +50,7 @@ public class SfgDiApplication {
 			2) Precisa de Autowired senao dá null pointer no Service	*/
 
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
-		constructorInjectedController.getGreeting();
+		System.out.println(constructorInjectedController.getGreeting());
 
 	}
 
