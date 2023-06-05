@@ -17,13 +17,12 @@ public class SfgDiApplication {
 
 		MyController myController = (MyController) ctx.getBean("myController");                                       /*Nome da Classe do Controlador*/
 
-		String greeting = myController.sayHello();
 
-		System.out.println(greeting);
+		System.out.println("---------------------- MyController Test");
+		System.out.println(myController.sayHello());
 
 
-
-		System.out.println("PropertyInjectedController Test ----------------------");
+		System.out.println("---------------------- PropertyInjectedController Test");
 
 		/*Vai dar erro porque:
 			1) Precisa de @Component
@@ -33,7 +32,7 @@ public class SfgDiApplication {
 		System.out.println(propertyInjectedController.getGreeting());
 
 
-		System.out.println("SetterInjectedController Test ----------------------");
+		System.out.println("---------------------- SetterInjectedController Test");
 
 		/*Vai dar erro porque:
 			1) Precisa de @Component
@@ -43,7 +42,7 @@ public class SfgDiApplication {
 		System.out.println(setterInjectedController.getGreeting());
 
 
-		System.out.println("ConstructorInjectedController Test ----------------------");
+		System.out.println("---------------------- ConstructorInjectedController Test");
 
 		/*Vai dar erro porque:
 			1) Precisa de @Component
